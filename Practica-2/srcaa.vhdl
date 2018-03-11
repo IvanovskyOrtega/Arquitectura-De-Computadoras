@@ -51,13 +51,13 @@ begin
 				
 				aux3 := g(k) and aux3;
 				aux2 := aux2 or aux3;
+				aux3 := '1';
 			
 			end loop;
 			
 			c(i+1) := g(i) or aux1 or aux2;
 			aux1 := '1';
 			aux2 := '0';
-			aux3 := '1';
 		
 		end loop;
 		
